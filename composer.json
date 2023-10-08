@@ -1,7 +1,8 @@
 {
     "autoload": {
         "psr-4": {
-            "Controllers\\": "Controllers/"
+            "Controllers\\": "Controllers/",
+            "Services\\": "Services/"
         }
     },
     "require": {
