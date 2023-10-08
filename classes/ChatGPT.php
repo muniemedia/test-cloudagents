@@ -7,6 +7,15 @@ use services\ChatGPTService;
 class ChatGPT
 {
 
+    /**
+     * @var ChatGPTService
+     */
+    private $chatGPTService;
+    /**
+     * @var array|array[]
+     */
+    private $currentConversation;
+
     public function __construct()
     {
         $this->chatGPTService = new ChatGPTService('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');
