@@ -9,4 +9,4 @@ error_reporting(E_ALL);
 $chatGPT = new \classes\ChatGPT();
 $response = $chatGPT->test($_GET['input']);
 
-return $response;
+echo $response;
