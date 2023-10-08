@@ -61,8 +61,7 @@ class ChatGPTService
             "model": "gpt-3.5-turbo-16k",
             "messages": [{"role": "user", "content": "Say this is a test"}],
             "max_tokens": 128,
-            "temperature": 0,
-            "stream": true
+            "temperature": 0
             }',
             CURLOPT_HTTPHEADER => array(
                 'Content-Type: application/json',
