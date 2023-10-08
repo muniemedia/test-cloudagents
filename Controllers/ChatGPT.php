@@ -20,7 +20,8 @@ class ChatGPT
 
     public function __construct()
     {
-        $this->chatGPTService = new ChatGPTService('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');
+        $openAIKey = $_ENV['OPENAI_KEY'];
+        $this->chatGPTService = new ChatGPTService($openAIKey);
         $this->currentConversation = [
             'prompts' => [
                 [
