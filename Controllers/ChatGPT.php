@@ -4,7 +4,7 @@ namespace Controllers;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use services\ChatGPTService;
+use Services\ChatGPTService;
 
 class ChatGPT
 {
