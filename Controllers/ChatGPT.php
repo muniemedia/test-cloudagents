@@ -45,7 +45,7 @@ class ChatGPT
     {
         $this->currentConversation['prompts'][] = ['role' => 'user', 'content' => $input];
 
-        $response = $this->chatGPTService->sendMessage($this->currentConversation['prompts']);
+        $response = $this->chatGPTService->sendMessageCurl($this->currentConversation['prompts']);
 
         return $response;
     }
