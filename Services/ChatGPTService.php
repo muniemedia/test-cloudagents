@@ -65,7 +65,7 @@ class ChatGPTService
             }',
             CURLOPT_HTTPHEADER => array(
                 'Content-Type: application/json',
-                'Authorization: Bearer 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'
+                'Authorization: Bearer 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'
             ),
         ));
 
