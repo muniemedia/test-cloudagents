@@ -5,6 +5,7 @@ namespace Controllers;
 require __DIR__ . '/../vendor/autoload.php';
 
 use Services\ChatGPTService;
+use Dotenv\Dotenv;
 
 class ChatGPT
 {
@@ -21,7 +22,7 @@ class ChatGPT
     public function __construct()
     {
         // Load environment variables from .env file
-        $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+        $dotenv = Dotenv::createImmutable(__DIR__);
         $dotenv->load();
 
         $openAIKey = $_ENV['OPENAI_KEY'];
