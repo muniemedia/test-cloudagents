@@ -4,6 +4,7 @@ namespace Controllers;
 
 require __DIR__ . '/../vendor/autoload.php';
 
+use Dotenv\Dotenv;
 use Services\ChatGPTService;
 
 class ChatGPT
@@ -21,7 +22,7 @@ class ChatGPT
     public function __construct()
     {
         //load DotEnv immutable
-        $dotenv = \Dotenv\Dotenv::createImmutable(__DIR__);
+        $dotenv = Dotenv::createImmutable(__DIR__);
         $dotenv->load();
 
 
