@@ -21,7 +21,9 @@ class ChatGPT
 
     public function __construct()
     {
-        // Load environment variables from .env file
+        //load DotEnv immutable
+        $dotenv = Dotenv::createImmutable(__DIR__);
+        $dotenv->load();
 
 
         $openAIKey = $_ENV['OPENAI_KEY'];
