@@ -46,6 +46,9 @@ class ChatGPTService
 
     public function sendMessageCurl($messages)
     {
+
+        $openAIKey = $_ENV['OPENAI_KEY'];
+
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
@@ -65,7 +68,7 @@ class ChatGPTService
             }',
             CURLOPT_HTTPHEADER => array(
                 'Content-Type: application/json',
-                'Authorization: Bearer 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'
+                'Authorization: Bearer ' . $openAIKey
             ),
         ));
 
