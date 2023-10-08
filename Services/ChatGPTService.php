@@ -9,6 +9,10 @@ use GuzzleHttp\Client;
 class ChatGPTService
 {
     protected $apiKey;
+    /**
+     * @var Client
+     */
+    private $guzzle;
 
     public function __construct($apiKey)
     {
