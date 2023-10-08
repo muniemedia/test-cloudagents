@@ -36,9 +36,9 @@ class ChatGPT
         $response = $this->sendToChatGPT($input);
 
         $responseObj = json_decode($response);
-        $responseText = $responseObj->choices[0]->message->content;
+        //$responseText = $responseObj->choices[0]->message->content;
 
-        return $responseText;
+        return $responseObj;
     }
 
     private function sendToChatGPT($input)

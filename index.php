@@ -11,4 +11,4 @@ error_reporting(E_ALL);
 $chatGPT = new ChatGPT();
 $response = $chatGPT->test($_GET['input']);
 
-echo $response;
+print_r($response);
