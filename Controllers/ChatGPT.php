@@ -1,6 +1,6 @@
 <?php
 
-namespace classes;
+namespace Controllers;
 
 use services\ChatGPTService;
 

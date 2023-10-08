@@ -1,6 +1,6 @@
 <?php
 
-namespace services;
+namespace Services;
 
 require __DIR__ . '/../vendor/autoload.php';
 

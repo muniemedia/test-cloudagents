@@ -2,7 +2,7 @@
 
 require __DIR__.'/vendor/autoload.php';
 
-use classes\ChatGPT;
+use Controllers\ChatGPT;
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
