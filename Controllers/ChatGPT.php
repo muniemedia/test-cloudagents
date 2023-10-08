@@ -20,7 +20,7 @@ class ChatGPT
 
     public function __construct()
     {
-        $this->chatGPTService = new ChatGPTService('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');
+        $this->chatGPTService = new ChatGPTService('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');
         $this->currentConversation = [
             'prompts' => [
                 [
