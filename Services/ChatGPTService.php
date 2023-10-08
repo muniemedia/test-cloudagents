@@ -68,7 +68,7 @@ class ChatGPTService
             }',
             CURLOPT_HTTPHEADER => array(
                 'Content-Type: application/json',
-                'Authorization: Bearer ' . $openAIKey
+                'Authorization: Bearer ' . $this->apiKey
             ),
         ));
 

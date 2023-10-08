@@ -20,7 +20,12 @@ class ChatGPT
 
     public function __construct()
     {
+        // Load environment variables from .env file
+        $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+        $dotenv->load();
+
         $openAIKey = $_ENV['OPENAI_KEY'];
+
         $this->chatGPTService = new ChatGPTService($openAIKey);
         $this->currentConversation = [
             'prompts' => [
