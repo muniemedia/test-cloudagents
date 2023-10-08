@@ -39,7 +39,7 @@ class ChatGPTService
 
         $response = $this->guzzle->post('https://api.openai.com/v1/chat/completions', $options);
 
-        $body = $response->getBody();
+        $body = $response->getBody()->getContents();
 
         return $body;
     }
