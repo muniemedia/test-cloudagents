@@ -22,7 +22,7 @@ class ChatGPT
     public function __construct()
     {
         //load DotEnv immutable
-        $dotenv = Dotenv::createImmutable('../');
+        $dotenv = Dotenv::createImmutable(__DIR__ . '../../');
         $dotenv->load();
 
 
